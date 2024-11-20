@@ -1,0 +1,38 @@
+{% extends './base.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block body %}
+
+
+<div class="contenedor">
+
+
+    <h2><br>Prediciendo su calidad aseguramos su disponibilidad, riesgos y preservamos la vida</h2>
+    <p></p>
+    <a href="mostrarmapa" class="btn btn-primary">Predecir</a>
+    <a href="informacion" class="btn btn-primary">Leer más</a>
+  
+  </div> 
+  
+  <style>
+    .contenedor {
+      position: absolute;
+      bottom: 4cm;
+      right: 20cm;
+      margin-left: 3cm;
+      font-family: 'Calibri(Cuerpo)', sans-serif;
+      font-size: 80%;
+      
+    }
+    body {
+    background-image: url("{{ url_for('static', filename='img/imagen.png') }}");
+    background-size: cover;
+    background-position: center;
+    height: 83vh;
+    margin: 0;
+    }
+  </style>
+
+  
+  {% endblock %}

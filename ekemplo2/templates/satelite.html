@@ -1,0 +1,85 @@
+{% extends './base.html' %}
+
+{% block title %}
+informacion Satelite
+{% endblock %}
+
+{% block body %}
+
+
+<div class="br-izquierda">
+
+    <h1 class="text-center">MODIS: Observando la Tierra con precisión inigualable</h1>
+    <br class="br-izquierda" >El Espectrorradiómetro de Imágenes de Resolución Moderada, se encuentra a bordo de dos satélites de la NASA: Terra (lanzado en 1999) y Aqua (lanzado en 2002). Juntos, estos satélites brindan una visión completa de la superficie terrestre cada 1 o 2 días.
+    Equipado con tecnología de vanguardia, MODIS adquiere datos en 36 bandas espectrales, abarcando desde la luz visible hasta el infrarrojo térmico, permitiendo la captura imágenes con diferentes resoluciones espaciales, que varían desde 250 metros hasta un kilometro 
+    El sistema de calibración de MODIS es uno de los más precisos jamás construidos para un instrumento espacial. Esto garantiza la alta calidad y confiabilidad de los datos recopilados por MODIS, lo que lo convierte en una herramienta esencial para la investigación científica y la gestión ambiental.       
+    </br>
+    
+
+</div>
+
+<div class="br-derecha">
+
+    <h1 class="text-center">Landsat: Un legado de observación de la Tierra desde el espacio</h1>
+    <br class="row">Ostentando el título de misión satelital de observación de la Tierra más antigua en operación, Landsat ha estado capturando imágenes de nuestro planeta desde el 23 de julio de 1972 hasta la actualidad. A lo largo de su notable trayectoria, ha recopilado un archivo invaluable de más de 3 millones de imágenes, ofreciendo una perspectiva única y crucial sobre los cambios dinámicos de la Tierra.
+    Equipado con sensores de vanguardia, Landsat es capaz de capturar imágenes en 12 bandas distintas del espectro electromagnético, con una resolución máxima de 15 metros. Actualmente, la misión Landsat está compuesta por dos satélites: Landsat 8 y Landsat 9. Juntos, estos satélites pasan sobre un lugar específico en la Tierra cada 16 días aproximadamente, ampliando aún más el alcance y la frecuencia de las observaciones.    
+    </br>
+    
+
+</div>
+
+<footer class="container-fluid bg-dark text-white py-4 mt-5">
+    <p class="text-center">Calidad Del Agua - 2024</p>
+</footer>
+
+
+<style>
+    body{
+        background-image: url("{{ url_for('static', filename='img/fiin.PNG') }}" );
+        background-size: cover;
+        background-position: center;
+        height: 83vh;
+        margin: 15;
+    }
+
+    .btn-primary {
+        position: absolute;
+
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: 30px; /* Ajusta la altura según tus necesidades */
+        margin: 2;
+        padding: 10px;
+    }
+
+    .br-derecha {
+        position: absolute;
+        width: 15cm;
+        top: 130px;
+        text-align:justify;
+        left: 24.6cm; /* Mueve el contenido 10cm a la derecha */
+        color: aliceblue;
+        
+    }
+    .br-izquierda {
+        top: 150px;
+        position:absolute;
+        width: 15cm;
+        text-align:justify;
+        left: 1cm; /* Mueve el contenido 10cm a la derecha */
+        
+    }
+    .text-with-outline {
+  -webkit-text-stroke: 2px rgb(240, 225, 225);
+  -moz-text-stroke: 2px rgb(247, 232, 232);
+  /*text-stroke: 2px black;*/
+}
+
+</style>
+
+{% endblock %}
